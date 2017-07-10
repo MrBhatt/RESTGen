@@ -1,0 +1,8 @@
+boot-application: true
+package: com.mrbhatt.test
+resource: car
+resource-attributes:
+   make: string
+   model: string
+   color: string
+   price: int
