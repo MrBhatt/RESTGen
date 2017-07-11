@@ -1,4 +1,5 @@
 # RESTCodeGen
+[![Build Status](https://travis-ci.org/MrBhatt/RESTCodeGen.svg?branch=master)](https://travis-ci.org/MrBhatt/RESTCodeGen)
 
 Utility to generate a Spring Boot and gradle based application (deployable as a microservice) for exposing a resource via RESTFUL APIs. The generation of the application / APIscan be controlled via declarative config provided in appconfig.yaml. 
 
