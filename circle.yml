@@ -1,3 +1,7 @@
 machine:
+  pre:
+    wget "https://services.gradle.org/distributions/gradle-4.0.1-bin.zip";unzip gradle-4.0.1-bin.zip
+  environment:                        
+      PATH: "~/$CIRCLE_PROJECT_REPONAME/gradle-4.0.1-bin/bin:$PATH"
   java:
     version: openjdk8
