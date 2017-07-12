@@ -10,10 +10,35 @@ buildscript {
 plugins {
     id 'org.springframework.boot' version '1.5.4.RELEASE'
 }
+
 apply plugin: 'application'
+apply plugin: 'pmd'
 
 repositories {
     mavenCentral();
+}
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+run {
+    if (project.hasProperty("appArgs")) {
+        args Eval.me(appArgs)
+    }
+}
+
+pmd {
+  ignoreFailures=false
+  pmdTest.enabled=false
+  consoleOutput=true
+  reportsDir = file("$project.buildDir/reports/pmd")
+  ruleSets = [
+    "java-basic",
+    "java-braces",
+    "java-strings",
+    "java-imports",
+    "java-unusedcode"
+  ]
 }
 
 dependencies {
@@ -21,8 +46,9 @@ dependencies {
    compile 'org.yaml:snakeyaml:1.18'
    compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.6'
    compile("org.springframework.boot:spring-boot-starter-web")
+   compile("org.springframework.boot:spring-boot-starter-thymeleaf")
    compile("org.springframework.boot:spring-boot-starter-data-jpa")
    compile("org.projectlombok:lombok:1.16.16")
 }
 
-mainClassName='Main'
+mainClassName='com.mrbhatt.Main'

@@ -1,0 +1,9 @@
+boot-application: true
+package: com.mrbhatt.test
+resource: plane
+resource-attributes:
+   make: string
+   model: string
+   color: string
+   price: int
+
