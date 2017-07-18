@@ -37,7 +37,8 @@ pmd {
     "java-braces",
     "java-strings",
     "java-imports",
-    "java-unusedcode"
+    "java-unusedcode",
+    "java-codesize"
   ]
 }
 

@@ -6,7 +6,7 @@ import java.util.Map;
 import org.yaml.snakeyaml.*;
 
 public class DefaultProjectConfig implements ProjectConfig {
-  public Map<String, Object> get() {
+  public Map<String, Object> getValues() {
       Yaml yaml = new Yaml();
       InputStream appConfig = null;
       try {
