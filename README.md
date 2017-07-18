@@ -16,8 +16,8 @@ Generated code:
 RESTCodeGen is a gradle based project. 
 
 To execute (with default config yaml which comes with this source code): 
-gradle run
+`gradle run`
 
 To execute (with user specified config yaml file):
-gradle run -PappArgs="['<<path to yaml config>>']"
- example: gradle run -PappArgs="['appconfig.yml']" where appconfig.yml exists in the current directory
+gradle run -PappArgs="['<path to yaml config>']"
+ example: `gradle run -PappArgs="['appconfig.yml']"` where appconfig.yml exists in the current directory
