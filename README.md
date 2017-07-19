@@ -21,3 +21,14 @@ To generate code:
 - With specified config yaml file: `gradle run -PappArgs="['path to yaml config']"`
   - example: `gradle run -PappArgs="['appconfig.yml']"` where appconfig.yml exists in the current directory
 
+## Sample config yaml
+```
+boot-application: true
+package: com.mrbhatt.test
+resource: plane
+resource-attributes:
+   make: string
+   model: string
+   color: string
+   price: int
+```
