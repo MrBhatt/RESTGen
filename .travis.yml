@@ -1,4 +1,5 @@
 dist: trusty
+sudo: false
 language: java
 jdk:
 - openjdk8
@@ -9,3 +10,6 @@ deploy:
   user: anupambhatt
   key:
     secure: KrfqK3MluAWTgBUD3DxcYGHDDUDjRQT/GSQkY87rjYRDjfQnLZd3BKOqZ5KVA5rSxCaTuGbXrBq8JhMUgK3jdmg2qVlm8PxEvBEE80TV6WKLvmnCzfxkinuHXv8uqrCFldL7/TFMz1ceh7nY7va6NgM91y/t1h4Cf9pP8osFsqVCV45J1AIqU6d75iN+tK2amQh0W6yApO+aEQdRCAVoMNjpqgWynRDzJR8qPEjJAs0YXLXVD3oYHslnSiZBXnwIg1exBmzhkHPNEmYWoBN7XOD53jFtIb55+KKDfJsjjhA0kC6okiZ70Tj04W4td6ESBcoYX+kdqYUd1NsnxLE5Cdh2XD5JNTUh6EdO4Wbb5MiUEyWeKXVknkqfLgUe50J89ot1V2ZkVqnxF6UVGG6s0XALvHaQYJTOqmo8HrVx/nAKlSVQQ1CbDFCwLRyLidL0zRQpW+3TgDPtmVIKzdOf26oz7OJ10yD+RbJAzjvpuh+EdmlTR41+kIeAUdpPNuBVsMAe/u6CB18wRqXTBvQAmBwUFGn08GooDpqO+1Nf43J1lMLCXtXs+kzPeTmdwrKguPqbb0dMvC3eP+ijU0C9C06d+lyJKzb/cj+DQWzTqDHBBPl5sGRyaqbZ9G6VPimtMo/rV7eIBdEdUjxS3u250BLhzz/o5NvYSezswPpkQEg=
+branches:
+  only:
+  - master
