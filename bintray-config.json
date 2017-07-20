@@ -5,7 +5,7 @@
         "subject": "anupambhatt"
     },
     "version": {
-        "name": "${TRAVIS_BUILD_NUMBER}",
+        "name": "${env.TRAVIS_BUILD_NUMBER}",
         "desc": "This is ${env.TRAVIS_BUILD_NUMBER} version ${TRAVIS_BUILD_NUMBER}",
         "released": "2017-01-04",
         "gpgSign": false
