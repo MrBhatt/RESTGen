@@ -14,5 +14,5 @@
         [
         {"includePattern": "build/distributions/RESTGen.zip", "uploadPattern": "$1"}
         ],
-    "publish": false
+    "publish": true
 }
