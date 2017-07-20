@@ -6,7 +6,8 @@ jdk:
 install: true
 script: gradle build
 before_deploy:
- - ls
+ - ls build
+ - ls build/distributions
  - pwd
 deploy:
   provider: bintray
