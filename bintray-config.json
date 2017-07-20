@@ -14,7 +14,7 @@
 
     "files":
         [
-        {"includePattern": "build/distributions(.*)*/(.*\\.zip)"}
+        {"includePattern": "build/distributions/CodeGen.zip"}
         ],
     "publish": true
 }
