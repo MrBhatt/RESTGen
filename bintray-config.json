@@ -1,0 +1,20 @@
+{
+    "package": {
+        "name": "auto-upload",
+        "repo": "myRepo",
+        "subject": "myBintrayUser",
+    },
+
+    "version": {
+        "name": "0.1",
+        "desc": "This is version 0.1",
+        "released": "2017-01-04",
+        "gpgSign": false
+    },
+
+    "files":
+        [
+        {"includePattern": "build/distributions(.*)*/(.*\\.zip)"}
+        ],
+    "publish": true
+}
