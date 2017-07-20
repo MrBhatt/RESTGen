@@ -1,20 +1,13 @@
 {
     "package": {
-        "name": "RESTGen-CommandLine",
+        "name": "command-line",
         "repo": "RESTGen",
         "subject": "anupambhatt"
     },
 
-    "version": {
-        "name": "0.1",
-        "desc": "This is version 0.1",
-        "released": "2017-01-04",
-        "gpgSign": false
-    },
-
     "files":
         [
-        {"includePattern": "./build/distributions/CodeGen.zip"}
+        {"includePattern": "build/distributions/RESTGen.zip"}
         ],
     "publish": true
 }
