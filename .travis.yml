@@ -2,9 +2,12 @@ dist: trusty
 sudo: false
 language: java
 jdk:
-- openjdk8
+ - openjdk8
 install: true
 script: gradle build
+before_deploy:
+ - ls
+ - pwd
 deploy:
   provider: bintray
   user: anupambhatt
