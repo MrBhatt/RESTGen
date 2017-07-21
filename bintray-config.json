@@ -6,8 +6,6 @@
     },
     "version": {
         "name": "0.1.0",
-        "desc": "Unstable development version",
-        "released": "20171-07-21",
         "gpgSign": false
     },
     "files":
