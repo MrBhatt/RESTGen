@@ -5,9 +5,9 @@
         "subject": "anupambhatt"
     },
     "version": {
-        "name": "${env.TRAVIS_BUILD_NUMBER}",
-        "desc": "This is ${env.TRAVIS_BUILD_NUMBER} version ${TRAVIS_BUILD_NUMBER}",
-        "released": "2017-01-04",
+        "name": "0.1.0",
+        "desc": "Unstable development version",
+        "released": "21-07-2017",
         "gpgSign": false
     },
     "files":

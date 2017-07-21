@@ -1,4 +1,4 @@
-# RESTCodeGen
+# RESTGen
 [![Build Status](https://travis-ci.org/MrBhatt/RESTGen.svg?branch=master)](https://travis-ci.org/MrBhatt/RESTGen)
 
 Utility to generate a Spring Boot and gradle based application (deployable as a microservice) for exposing a resource via RESTFUL APIs. The generation of the application / APIscan be controlled via declarative config provided in appconfig.yaml. 
@@ -13,11 +13,12 @@ Generated code:
  - Spring data Repository (CarRepository.java)
 
 ## How to generate your REST application code:
-### Download binary:
+### Download binary (zipped archive): 
+#### Versioning: RESTGen tries to follow semantic versioning as described here: http://semver.org/ 
 [ ![Download](https://api.bintray.com/packages/anupambhatt/RESTGen/RESTGen-CommandLine/images/download.svg) ](https://bintray.com/anupambhatt/RESTGen/RESTGen-CommandLine/_latestVersion)
 
 ### Download source code, build and execute:
-RESTCodeGen is a gradle based project. 
+RESTGen is a gradle based project. 
 
 To generate code:
 - With default config yaml which comes with this source code: `gradle run`
