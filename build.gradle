@@ -43,13 +43,15 @@ pmd {
 }
 
 dependencies {
-   compile group: 'com.sun.codemodel', name: 'codemodel', version: '2.6'
-   compile 'org.yaml:snakeyaml:1.18'
-   compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.6'
-   compile("org.springframework.boot:spring-boot-starter-web")
-   compile("org.springframework.boot:spring-boot-starter-thymeleaf")
-   compile("org.springframework.boot:spring-boot-starter-data-jpa")
-   compile("org.projectlombok:lombok:1.16.16")
+    compile group: 'com.sun.codemodel', name: 'codemodel', version: '2.6'
+    compile 'org.yaml:snakeyaml:1.18'
+    compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.6'
+    compile("org.springframework.boot:spring-boot-starter-web") {
+        exclude module: "spring-boot-starter-tomcat"
+    }
+    compile group: 'javax.persistence', name: 'persistence-api', version: '1.0.2'
+    compile("org.springframework.data:spring-data-jpa")
+    compile("org.projectlombok:lombok:1.16.16")
 }
 
 mainClassName='com.mrbhatt.Main'
