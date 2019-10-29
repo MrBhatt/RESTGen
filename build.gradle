@@ -52,7 +52,8 @@ dependencies {
     compile group: 'javax.persistence', name: 'persistence-api', version: '1.0.2'
     compile("org.springframework.data:spring-data-jpa")
 
-    compile("org.projectlombok:lombok:1.16.16")
+    compile 'org.projectlombok:lombok:1.18.10'
+    annotationProcessor 'org.projectlombok:lombok:1.18.10'
 }
 
 mainClassName='com.mrbhatt.Main'

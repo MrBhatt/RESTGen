@@ -1,6 +1,6 @@
 boot-application: true
 package: com.mrbhatt.test
-resource: plane
+resource: user
 resource-attributes:
    make: string
    model: string
